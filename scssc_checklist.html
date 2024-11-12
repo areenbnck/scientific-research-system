@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Research Essentials Checklist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .checklist-item {
+            margin: 15px 0;
+            border-left: 4px solid #007BFF;
+            padding-left: 15px;
+        }
+        .checklist-item input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+        .instructions {
+            margin: 5px 0 10px;
+            color: #555;
+        }
+        .file-url-box {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        .file-url-box input[type="file"] {
+            padding: 5px;
+        }
+        .file-url-box input[type="url"] {
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+            width: 100%;
+        }
+        .submit-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .submit-buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-buttons .submit {
+            background-color: #28a745;
+            color: #fff;
+        }
+        .submit-buttons .cancel {
+            background-color: #dc3545;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Scientific Research Essentials</h1>
+        
+        <div class="checklist-item">
+            <input type="checkbox" id="main-page">
+            <label for="main-page"><strong>Main Page</strong></label>
+            <p class="instructions">Share file, show your research on the journal home page, and put the journal link.</p>
+            <div class="file-url-box">
+                <label>Attach File:</label>
+                <input type="file" name="mainPageFile">
+                <label>Add URL:</label>
+                <input type="url" placeholder="https://example.com">
+            </div>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="proof-for-journal">
+            <label for="proof-for-journal"><strong>Proof for Journal</strong></label>
+            <p class="instructions">Submit proof from the journal that should be in the database.</p>
+            <div class="file-url-box">
+                <label>Attach File:</label>
+                <input type="file" name="proofForJournalFile">
+                <label>Add URL:</label>
+                <input type="url" placeholder="https://example.com">
+            </div>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="form">
+            <label for="form"><strong>Form</strong></label>
+            <p class="instructions">Submit the completed form from the college to approve your research.</p>
+            <div class="file-url-box">
+                <label>Attach File:</label>
+                <input type="file" name="formFile">
+                <label>Add URL:</label>
+                <input type="url" placeholder="https://example.com">
+            </div>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="research-rank">
+            <label for="research-rank"><strong>Your Research Rank</strong></label>
+            <p class="instructions">Select your research rank, which should be one of the following: Q1, Q2, Q3, Q4.</p>
+            <input type="text" placeholder="Enter the rank">
+            <div class="file-url-box">
+                <label>Attach File:</label>
+                <input type="file" name="researchRankFile">
+                <label>Add URL:</label>
+                <input type="url" placeholder="https://example.com">
+            </div>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="first-pass">
+            <label for="first-pass"><strong>First Pass</strong></label>
+            <div class="file-url-box">
+                <label>Attach File:</label>
+                <input type="file" name="firstPassFile">
+                <label>Add URL:</label>
+                <input type="url" placeholder="https://example.com">
+            </div>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="acceptance">
+            <label for="acceptance"><strong>Acceptance</strong></label>
+            <p class="instructions">Submit documentation of the journal's approval to publish your research.</p>
+            <div class="file-url-box">
+                <label>Attach File:</label>
+                <input type="file" name="acceptanceFile">
+                <label>Add URL:</label>
+                <input type="url" placeholder="https://example.com">
+            </div>
+        </div>
+
+        <div class="checklist-item">
+            <input type="checkbox" id="fee">
+            <label for="fee"><strong>Fee</strong></label>
+            <p class="instructions">Submit file proof you paid the fee for the journal that helps you get incentives from the university.</p>
+            <div class="file-url-box">
+                <label>Attach File:</label>
+                <input type="file" name="feeFile">
+                <label>Add URL:</label>
+                <input type="url" placeholder="https://example.com">
+            </div>
+        </div>
+
+        <div class="submit-buttons">
+            <button class="submit">Submit</button>
+            <button class="cancel">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>
